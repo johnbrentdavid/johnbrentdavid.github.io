@@ -4,6 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #F8C8DC;
+    background-image:url('images/sberry.png');
 }
 
 /* Position the "No" button absolutely within body */
@@ -34,7 +35,7 @@ body {
     font-family: 'Nunito';
     font-size: 25px;
     font-weight: bold;
-    color: white;
+    color: whitesmoke;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;
