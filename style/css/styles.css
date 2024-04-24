@@ -4,6 +4,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #F8C8DC;
+    background-image:url('images/sberry.png');
 }
 
 /* Position the "No" button absolutely within body */
@@ -22,11 +23,11 @@ body {
 
 .header_text {
     font-family: 'Nunito';
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
-    color: white;
+    color: rgb(54, 54, 54);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 2px;
     margin-bottom: 0px;
 }
 
@@ -41,7 +42,7 @@ body {
 }
 
 .btn {
-    background-color: #FFB6C1;
+    background-color: #54ee6e;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -51,11 +52,13 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 12px;
+    border-color: black;
+    border-width:2cm;
     transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #FAF9F6;
+    background-color: #008015;
 }
 
 .gif_container {
