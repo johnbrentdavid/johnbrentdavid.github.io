@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Fira+Code:wght@300..700&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Cutive Mono;
+  background-color: #b9e6fb;
+}
+
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.sentence {
+  color: #1f1f1f;
+  font-size: 1.8em;
+  position: relative;
+  font-weight: 600;
+  white-space: wrap;
+  text-align: center;
+  margin: 20px;
+}
+
+.sentence::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 6px;
+  width: 14px;
+  height: 2px;
+  background-color: #4b90cd;
+  animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.heart {
+  font-size: 6em;
+  position: relative;
+  display: none;
+  transform: scale(0.7);
+}
+
+.heartbeat {
+  position: relative;
+  z-index: 1;
+  animation: beat 2s linear infinite;
+}
+
+.heartecho {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  animation: echo 2s linear infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(0.9);
+  }
+  21% {
+    transform: scale(1.1) skew(0.004turn);
+  }
+  28% {
+    transform: scale(1) skew(0.008turn);
+  }
+  35% {
+    transform: scale(1) skew(0);
+  }
+}
+
+@keyframes echo {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  14% {
+    opacity: 0.4;
+    transform: scale(0.8);
+  }
+  21% {
+    opacity: 0.4;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
+
+.heart a {
+  text-decoration: none;
+}
+
+span {
+  font-size: 15px;
+  white-space: wrap;
+}
+
+.prompt {
+  display: none;
+  width: 60%;
+  text-align: center;
+}
